@@ -97,7 +97,6 @@ public class BootSpringBootApplication {
 ---------------------------------------
 
 
-// code
 Link: [Google][googlelink]
 
-[googlelink]: https://google.com "Go google"
+[googlelink]: https://google.com "구글로 갑니다."
