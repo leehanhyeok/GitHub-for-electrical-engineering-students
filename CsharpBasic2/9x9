@@ -1,0 +1,17 @@
+namespace GuGuDan
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            for( int i = 2; i<10; i++) // 2단부터 시작, 이 인덱스 값을 9번 반복하고 싶기 때문에 j 반복 선언
+            {
+                for(int j = 1; j<10; j++)
+                {
+                    Console.WriteLine($"{i} * {j} = {i * j}");
+                }
+                Console.WriteLine();
+            }
+        }
+    }
+}
