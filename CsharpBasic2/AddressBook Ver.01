@@ -1,0 +1,115 @@
+using System.Xml.Serialization;
+
+namespace MyAdress
+{
+    class Person
+    {
+        public int ID { get; set; }
+        public string Name { get; set; }
+        public string HP { get; set; }
+
+        public Person(int id , string name, string hp) //인자가 있는 생성자로 
+        {
+            ID = id;
+            Name = name;
+            HP = hp;
+        }
+    }
+
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            List<Person> adressbook = new List<Person>();
+            
+            //do While 메뉴
+            int choice = 0;
+            int num = 0;
+
+            do
+            {
+                Console.WriteLine("1. 데이터 삽입");
+                Console.WriteLine("2. 데이터 삭제");
+                Console.WriteLine("3. 데이터 조회");
+                Console.WriteLine("4. 데이터 수정");
+                Console.WriteLine("5. 프로그램 종료");
+                Console.WriteLine();
+                Console.Write("메뉴 : ");
+                choice = Int32.Parse(Console.ReadLine());
+                Console.WriteLine();
+
+                if (choice == 1)
+                {
+                    Console.Write("ID 입력 : ");
+                    int id = int.Parse(Console.ReadLine());
+                    Console.Write("이름 입력 : ");
+                    string name = Console.ReadLine();
+                    Console.Write("전화번호 입력 : ");
+                    string hp  = Console.ReadLine();
+                    Person person = new Person(id, name, hp);
+                    adressbook.Add(person);
+                }
+
+                else if (choice == 2)
+                {
+                    Console.Write("삭제할 ID를 입력하시오 : ");
+                    int deleteid = Int32.Parse(Console.ReadLine());
+                    
+                    for (int i = 0; i < adressbook.Count; i++)
+                    {
+                        if (adressbook[i].ID == deleteid)
+                        {
+                            adressbook.RemoveAt(i);
+                        }
+                    }
+
+                }
+
+                else if (choice == 3)
+                {
+                    Console.WriteLine("ADDR_ID  " + "NAME      " + "HP");
+                    foreach (Person i in adressbook)
+                    {
+                        Console.Write(i.ID + "      ");
+                        Console.Write(i.Name + "    ");
+                        Console.Write(i.HP + " ");
+                        Console.WriteLine();
+                        Console.WriteLine();
+                    }
+                }
+
+                else if (choice == 4)
+                {
+                    Console.Write("수정할 위치의 ID를 입력하시오 : ");
+                    int update = Int32.Parse(Console.ReadLine());
+
+                    for (int i = 0; i < adressbook.Count; i++)
+                    {
+                        if (adressbook[i].ID == update)
+                        {
+                            Console.Write("ID 입력 : ");
+                            int ID = int.Parse(Console.ReadLine());
+                            Console.Write("이름 입력 : ");
+                            string Name = Console.ReadLine();
+                            Console.Write("전화번호 입력 : ");
+                            string Hp = Console.ReadLine();
+                            
+                        }
+                    }
+                }
+
+                else if (choice == 5)
+                {
+                    Console.WriteLine("종료됩니다.");
+                    break;
+                }
+                    
+                else
+                {
+                    Console.WriteLine("다시입력해주세요");
+                }
+
+            } while (ㅊ);
+        }
+    }
+}
