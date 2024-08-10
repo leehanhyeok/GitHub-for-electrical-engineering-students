@@ -1,4 +1,3 @@
-```
 namespace CtoF
 {
     internal class Program
@@ -12,4 +11,3 @@ namespace CtoF
         }
     }
 }
-```
