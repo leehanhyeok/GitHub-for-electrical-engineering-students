@@ -1,10 +1,23 @@
 <!DOCTYPE html>
 <html >
 
+<head>
+    <title>표 그리기</title>
+    <!-- css -->
+    <style> table, th, tr, td{
+                border: solid 1px black; /* 그리드 색상 */
+                border-collapse: collapse; /* 그리드 모양 */
+                padding: 8px; /* 표 내 객체의 여백 */
+                margin: 30px; /* 표 바깥 쪽 여백 */ 
+                
+                
+    }</style>
+</head>
+
 <body>
-    <table border="1">
+    <table>
         <!-- <tr>은 행 -->
-        <!-- <td>는 컬럼, 표 내에 객체의 문자 기본크기 <th>는 볼드  -->
+        <!-- <td>는 행 내에 객체의 문자 기본크기 <th>는 볼드  -->
         <tr>
             <th>번호</th>
             <th>이름</th>

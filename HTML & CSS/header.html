@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <style>
+        #page {
+            width: 980px;
+            margin: 0 auto;
+        }
+        header #logo {
+            float: left;
+            margin: 15px 0 0 20px;
+        }
+        header #moto {
+            float: left;
+            margin: 45px 0 0 20px;
+        }
+        header #top_menu {
+            float: right;
+            margin: 50px 0 0 0;
+        }
+        header #top_menu li {
+            display: inline;
+            list-style: none; /* 불릿 포인트 제거 */
+        }
+        .line {
+            margin-top: 25px;
+            border-top: solid 1px #cccccc;
+        }
+        header nav ul {
+            display: flex; /* 수평 정렬을 위한 flexbox 사용 */
+            justify-content: flex-start;
+            margin-top: 25px;
+            padding: 0;
+            list-style: none; /* 불릿 포인트 제거 */
+        }
+        header nav li {
+            margin-left: 40px; /* 항목 간 간격 조정 */
+        }
+        .clear {
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+<div id="page">
+    <header>
+        <div id="logo"><img src="img/logo.gif"></div>
+        <div id="moto"><img src="img/moto.gif"></div>
+        <ul id="top_menu">
+            <li>로그인 |</li>
+            <li>회원가입 |</li>
+            <li>사이트맵 |</li>
+            <li>회사소개 |</li>
+        </ul>
+        <div class="clear"></div>
+        <div class="line"></div>
+    </header>
+    <nav>
+        <ul>
+            <li class="item"><img src="img/menu01.gif"></li>
+            <li class="item"><img src="img/menu02.gif"></li>
+            <li class="item"><img src="img/menu03.gif"></li>
+            <li class="item"><img src="img/menu04.gif"></li>
+            <li class="item"><img src="img/menu05.gif"></li>
+        </ul>
+    </nav>
+</div> <!-- page -->
+</body>
+</html>

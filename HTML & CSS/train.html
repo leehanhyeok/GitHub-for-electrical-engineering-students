@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        table{
+            border-collapse: collapse;
+            width: 610px;
+        }
+
+        table td, th{
+            border: solid 1px #ccc;
+        }
+
+        tr{
+            height: 0px;
+            text-align: center;
+        }
+
+        td, th{
+            padding: 5px;
+        }
+
+        .train{
+            background-color: #fbdbf2;
+            color: #f1477b;
+            text-decoration: underline;
+            font-weight: bold;
+        }
+
+        #table_title{
+            height: 30px;
+            background-color: #eee;
+        }
+
+        #col1, #col4{
+            width:90px
+        }
+
+        #col2, #col3{
+            width:60px
+        }
+        #col5, #col6{
+            width:80px
+        }
+    </style>
+</head>
+<body>
+    <h2>KTX 열차표 예매</h2>
+
+    <table border ="1">
+        <tr id = "table_title">
+            <th>열차번호</th>
+            <th>출발</th>
+            <th>도착</th>
+            <th>출발시간</th>
+            <th>특실</th>
+            <th>일반실</th>
+            <th>소요시간</th>
+        </tr>
+            <th id = "col1" class = "train">175</th>
+            <td id = "col2">서울</th>
+            <td id = "col3">부산</th>
+            <td id = "col4">21:00</th>
+            <td id = "col5"><img src ="./img/full.png"></th>
+            <td id = "col6"><img src ="./img/full.png"></th>
+            <td id = "col7">02:44</th>
+        <tr>
+
+        </tr>
+            <th class = "train">177 </th>
+            <td>서울</th>
+            <td>부산</th>
+            <td>21:30</th>
+            <td><img src ="./img/empty.png"></th>
+            <td><img src ="./img/empty.png"></th>
+            <td>02:38</th>
+        <tr>
+
+        </tr>
+        <th class = "train">179</th>
+        <td>서울</th>
+        <td>부산</th>
+        <td>22:00</th>
+        <td><img src ="./img/empty.png"></th>
+        <td><img src ="./img/empty.png"></th>
+        <td>02:42</th>
+    <tr>
+
+        </tr>
+    </table>
+</body>
+</html>
