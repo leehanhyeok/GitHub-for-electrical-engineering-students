@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+</head>
+<body>
+    <script>
+        var product = {
+            제품명 : '7D 건조 망고',
+            유형 : '당절임', 
+            성분 : '망고, 설탕, 메타중아황산나트륨, 차지황색소',
+            원산지 : '필리핀'
+
+        };
+        
+        var output ='';
+        for (var key in product){
+            output += '*' + key + ' : ' + product[key] + '\n';
+        }
+        alert(output);
+    </script>
+</body>
+</html>

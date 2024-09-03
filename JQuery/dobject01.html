@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+        window.onload = function(){
+            var header = document.createElement('header');
+            var textNode = document.createTextNode('Hello DOM');
+
+            //노드 연결
+            header.appendChild(textNode);
+            document.body.appendChild(header);
+        };
+        
+    </script>
+</head>
+<body>
+    <h1 id ="header"></h1>
+</body>
+</html>
